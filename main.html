@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="sr-only">Interface de monitoramento de temperatura do Forno 02</h2>
+
+
+<div class="card">
+  <div class="header">
+    <div class="dot" id="dot"></div>
+    <span class="header-title">Sistema de Fundição Forno 02</span>
+  </div>
+
+  <div class="temp" id="tempVal">0°C</div>
+
+  <div class="bar-track">
+    <div class="bar-fill" id="bar"></div>
+  </div>
+  <div class="bar-ends"><span>0°C</span><span>1200°C</span></div>
+
+  <div class="alert" id="alert">⚠ Risco de Transbordamento!</div>
+
+  <div class="btns">
+    <button class="btn-heat" id="btnHeat" onclick="aquecer()">Aquecer (+200°C)</button>
+    <button class="btn-cool" onclick="resfriar()">Resfriamento Total</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
